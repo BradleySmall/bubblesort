@@ -1,0 +1,10 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX	bubblesort.py	/^MAX = 10$/;"	v
+list_bubblesort	bubblesort.py	/^def list_bubblesort(the_list):$/;"	f
+main	bubblesort.py	/^def main():$/;"	f
+swap	bubblesort.py	/^def swap(the_list, src_idx, dst_idx):$/;"	f
