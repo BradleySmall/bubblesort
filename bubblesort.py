@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Program to demonstrate the bubble sort in python
-"""
+"""Program to demonstrate the bubble sort in python."""
 import random
 
 
@@ -9,9 +7,12 @@ MAX = 10
 
 
 def main():
-    """
-    main driver. creates the random list, then prints it, then calls
-    the sort function, outputs the sorted list.
+    """Demonstrate a bubble sort.
+
+    * Create the random list.
+    * Print.
+    * Sort.
+    * Output.
     """
     # This is an already sorted list
     # random_list = range(MAX)
@@ -29,33 +30,30 @@ def main():
 
 
 def swap(the_list, src_idx, dst_idx):
-    """
-    using the indexes swaps two values in a list
-    """
-    tmp = the_list[dst_idx]
-    the_list[dst_idx] = the_list[src_idx]
-    the_list[src_idx] = tmp
+    """Swap two values in a list."""
+    the_list[dst_idx], the_list[src_idx] = the_list[src_idx], the_list[dst_idx]
 
 
 def list_bubblesort(the_list):
-    """
-    classic bubble sort
-    tracking how many passes
+    """Sort a list.
 
-    starting from the first item in the list
-    walk the list until it can be swapped with a lower value or switch
-    to the larger value and continue down the list
+    Trackhow many passes.
 
-    loop back to the first item in the list
+    Start from the first item in the list.
+    Walk the list until it can be swapped with a lower value or switch
+    to the larger value and continue down the list.
 
-    when list is passed with no swaps, it is sorted.
-    returns the number of passes.
+    Loop back to the first item in the list.
+
+    When list is passed with no swaps, it is sorted.
+
+    Return the number of passes.
     """
     pass_no = 0
     done = False
     while not done:
         swapped = False
-        for next_one in range(1, len(the_list)):
+        for next_one, _ in enumerate(the_list[1:]):
             current = next_one - 1
             value = the_list[current]
             if value > the_list[next_one]:
